@@ -7,4 +7,38 @@
         android:layout_height="match_parent"
         tools:context=".TrzeciaAktywnosc">
 
+    <TextView
+            android:text="@string/menu_czynnosci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/informacja5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"/>
+    <Button
+            android:text="@string/otworz_stron_www"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/przyciskStronaWWW"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/informacja5" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"/>
+    <Button
+            android:text="@string/zadzwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/przyciskTelefon"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/przyciskStronaWWW" android:layout_marginTop="8dp"/>
+    <Button
+            android:text="@string/zrob_zdjecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/przyciskZdjecie"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/przyciskTelefon"/>
+    <Button
+            android:text="@string/wroc_do_glownej"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/przyciskPowrot1"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/przyciskZdjecie" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
