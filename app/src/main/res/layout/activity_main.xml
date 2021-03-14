@@ -7,12 +7,52 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <TextView
+            android:text="@string/info_przekaz"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/informacja1"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp"/>
+    <EditText
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/wiadomoscWysylanie"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/informacja1" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="@string/info_odczytana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/informacja2"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/wiadomoscWysylanie" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/wiadomoscOdbieranie"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/informacja2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/uruchom_druga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/przyciskDruga"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/wiadomoscOdbieranie" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <Button
+            android:text="@string/uruchom_trzecia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/uruchomTrzecia"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/przyciskDruga" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

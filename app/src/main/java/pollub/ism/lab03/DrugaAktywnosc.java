@@ -9,6 +9,5 @@ public class DrugaAktywnosc extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_druga_aktywnosc);
-        String help = "let me change sth";
     }
 }
